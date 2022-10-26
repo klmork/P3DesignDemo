@@ -13,9 +13,7 @@ public class Penguin implements Bird {
     public void announceSelf() {
         System.out.println("I am a penguin");
     }
-    public void bragAboutEggs() {
-        System.out.println("I'm so great - I have " + numEggs + " eggs.  Evolution is favoring me.");
-    }
+    public int getNumEggs() { return numEggs; }
 
     public void bragAboutWingspan() {
         System.out.println("I have a " + wingSpan + " foot wingspan");
