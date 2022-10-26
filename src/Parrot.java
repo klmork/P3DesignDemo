@@ -17,9 +17,11 @@ public class Parrot implements Bird, FlyingCreature{
     }
 
     public void fly() {
-        System.out.println("I am flying");
+        FlyingCreature.super.fly();
         location.x += 3;
     }
+
+    public Point getLocation() { return location; }
 
     public void bragAboutEggs() {
         System.out.println("I'm so great - I have " + numEggs + " eggs.  Evolution is favoring me.");
