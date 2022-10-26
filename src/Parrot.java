@@ -20,13 +20,13 @@ public class Parrot implements Bird, FlyingCreature{
         FlyingCreature.super.fly();
         location.x += 3;
     }
-
+    public void bragAboutWingspan() {
+        Bird.super.bragAboutWingspan();
+        System.out.println("I also can talk if you were wondering");
+    }
     public Point getLocation() { return location; }
 
     public int getNumEggs() { return numEggs; }
 
-    public void bragAboutWingspan() {
-        System.out.println("I have a " + wingSpan + " foot wingspan");
-        System.out.println("I also can talk if you were wondering");
-    }
+    public int getWingSpan() { return wingSpan; }
 }

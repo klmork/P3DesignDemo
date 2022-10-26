@@ -23,8 +23,5 @@ public class Sparrow implements Bird, FlyingCreature{
 
     public Point getLocation() { return location; }
     public int getNumEggs() { return numEggs; }
-
-    public void bragAboutWingspan() {
-        System.out.println("I have a " + wingSpan + " foot wingspan");
-    }
+    public int getWingSpan() { return wingSpan; }
 }

@@ -9,14 +9,15 @@ public class Penguin implements Bird {
         wingSpan = w;
         numEggs = n;
     }
-
     public void announceSelf() {
         System.out.println("I am a penguin");
     }
-    public int getNumEggs() { return numEggs; }
 
     public void bragAboutWingspan() {
-        System.out.println("I have a " + wingSpan + " foot wingspan");
+        Bird.super.bragAboutWingspan();
         System.out.println("Too bad I can't fly");
     }
+
+    public int getNumEggs() { return numEggs; }
+    public int getWingSpan() { return wingSpan; }
 }
